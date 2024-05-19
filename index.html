@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Dina Novita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Dina</h1>
+        <form id="operationForm">
+            <div class="input-group">
+                <label for="number1">Bilangan Pertama:</label>
+                <input type="number" id="number1" required>
+            </div>
+            <div class="input-group">
+                <label for="number2">Bilangan Kedua:</label>
+                <input type="number" id="number2" required>
+            </div>
+            <div class="input-group">
+                <label for="operation">Operasi:</label>
+                <select id="operation" required>
+                    <option value="add">Penjumlahan (+)</option>
+                    <option value="subtract">Pengurangan (-)</option>
+                    <option value="multiply">Perkalian (×)</option>
+                    <option value="divide">Pembagian (÷)</option>
+                </select>
+            </div>
+            <button type="submit">Hitung</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
